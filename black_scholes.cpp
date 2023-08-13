@@ -20,4 +20,10 @@ double Boole(double Start, double End, int n)
 {
     vector<double> X (n+1, 0.0);
     vector<double> Y (n+1, 0.0);
+    double delta_x = (End - Start) / double(n);
+    for(int i = 0; i <= n; i++)
+        {
+            X[i] = Start + i * delta_x;
+            Y[i] = f(X[i]);
+         }
 }
