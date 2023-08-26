@@ -27,3 +27,5 @@ double Boole(double Start, double End, int n)
             Y[i] = f(X[i]);
          }
 }
+
+//
